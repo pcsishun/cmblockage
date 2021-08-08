@@ -9,9 +9,12 @@
 }
 
 /* CONTENT IS CLOSE */
-.chatbox__support {
+.chatbox__support, .chatbox__support1, .chatbox__support2, .chatbox__support3_fetchAPI {
     display: flex;
     flex-direction: column;
+    position: fixed;
+    bottom: 50px;
+    right: 40px;
     background: #eee;
     width: 300px;
     height: 350px;

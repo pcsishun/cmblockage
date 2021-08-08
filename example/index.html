@@ -11,52 +11,125 @@
 </head>
 <body>
     <div class="container">
+            <div>
+                <form class="">
+                    <div>
+                        <label>test1</label>
+                        <input type="text">
+                        <label>test2</label>
+                        <input type="text">
+                        <span class="chatbox__button"><img src="./images/icons/question-mark.png" /></span>
+                    </div>
+                    <div>
+                        <label>test3</label>
+                        <input type="text">
+                        <label>test4</label>
+                        <input type="text">
+                        <span class="chatbox__button1"><img src="./images/icons/question-mark.png" /></span>
+                    </div>
+                    <div>
+                        <label>test5</label>
+                        <input type="text">
+                        <label>test6</label>
+                        <input type="text">
+                        <span class="chatbox__button2"><img src="./images/icons/question-mark.png" /></span>
+                    </div>
+                    <div>
+                        <label>API test</label>
+                        <input type="text">
+                        <label>API test2</label>
+                        <input type="text">
+                        <span class="chatbox__button3_API"><img src="./images/icons/question-mark.png" /></span>
+                    </div>
+                </form>    
+            </div>
+
         <div class="chatbox">
             <div class="chatbox__support">
                 <div class="chatbox__header">
                     <div class="chatbox__image--header">
-                        <img src="./images/image.png" alt="image">
+                        <button class="btn-close" id="closeTab">Close</button>
                     </div>
                     <div class="chatbox__content--header">
-                        <h4 class="chatbox__heading--header">Chat support</h4>
-                        <p class="chatbox__description--header">There are many variations of passages of Lorem Ipsum available</p>
                     </div>
                 </div>
                 <div class="chatbox__messages">
                     <div>
                         <div class="messages__item messages__item--visitor">
-                            Can you let me talk to the support?
-                        </div>
-                        <div class="messages__item messages__item--operator">
-                            Sure!
-                        </div>
-                        <div class="messages__item messages__item--visitor">
-                            Need your help, I need a developer in my site.
-                        </div>
-                        <div class="messages__item messages__item--operator">
-                            Hi... What is it? I'm a front-end developer, yay!
-                        </div>
-                        <div class="messages__item messages__item--typing">
-                            <span class="messages__dot"></span>
-                            <span class="messages__dot"></span>
-                            <span class="messages__dot"></span>
+                            ข้อความสนับสนุนที่ 1 
                         </div>
                     </div>
                 </div>
                 <div class="chatbox__footer">
-                    <img src="./images/icons/emojis.svg" alt="">
-                    <img src="./images/icons/microphone.svg" alt="">
-                    <input type="text" placeholder="Write a message...">
-                    <p class="chatbox__send--footer">Send</p>
-                    <img src="./images/icons/attachment.svg" alt="">
                 </div>
             </div>
+
+            <div class="chatbox__support1">
+                <div class="chatbox__header">
+                    <div class="chatbox__image--header">
+                        <button class="btn-close" id="closeTab">Close</button>
+                    </div>
+                    <div class="chatbox__content--header">
+                    </div>
+                </div>
+                <div class="chatbox__messages">
+                    <div>
+                        <div class="messages__item messages__item--visitor">
+                            ข้อความสนับสนุนที่ 2
+                        </div>
+                    </div>
+                </div>
+                <div class="chatbox__footer">
+                </div>
+            </div>
+            
+            <div class="chatbox__support2">
+                <div class="chatbox__header">
+                    <div class="chatbox__image--header">
+                        <button class="btn-close" id="closeTab">Close</button>
+                    </div>
+                    <div class="chatbox__content--header">
+                    </div>
+                </div>
+                <div class="chatbox__messages">
+                    <div>
+                        <div class="messages__item messages__item--visitor">
+                            ข้อความสนับสนุนที่ 3
+                        </div>
+                    </div>
+                </div>
+                <div class="chatbox__footer">
+                </div>
+            </div>
+
+            <div class="chatbox__support3_fetchAPI">
+                <div class="chatbox__header">
+                    <div class="chatbox__image--header">
+                        <button class="btn-close" id="closeTab">Close</button>
+                    </div>
+                    <div class="chatbox__content--header">
+                    </div>
+                </div>
+                <div class="chatbox__messages">
+                    <div>
+                        <div class="messages__item messages__item--visitor">
+                            ข้อความสนับสนุนที่ จากฐานข้อมูล
+                            <div id="git-api-data">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chatbox__footer">
+                </div>
+            </div>
+
             <div class="chatbox__button">
-                <button>button</button>
+                <button id="closeTab"><img src="./images/icons/chatbox-icon.svg" /></button>
             </div>
         </div>
     </div>
     <script src="./assets/js/Chat.js"></script>
+    <script src="assets/js/GitAPI.js"></script>
     <script src="./app.js"></script>
 </body>
 </html>

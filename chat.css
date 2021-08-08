@@ -9,7 +9,7 @@
 }
 
 /* CONTENT IS CLOSE */
-.chatbox__support {
+.chatbox__support, .chatbox__support1, .chatbox__support2, .chatbox__support3_fetchAPI{
     display: flex;
     flex-direction: column;
     background: #eee;

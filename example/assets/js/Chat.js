@@ -20,12 +20,24 @@ class InteractiveChatbox {
     }
 
     showOrHideChatBox(chatbox, button) {
-        if(this.state) {
+
+        let userSelection = document.getElementsByClassName('btn-close');
+
+        for(let i = 0; i < userSelection.length; i++) {
+          (function(index) {
+            userSelection[index].addEventListener("click", function() {
+                chatbox.classList.remove('chatbox--active')
+                this.state = false;
+             })
+          })(i);
+        }
+
+        if(this.state || this.state === undefined) {
             chatbox.classList.add('chatbox--active')
-            this.toggleIcon(true, button);
+            // this.toggleIcon(true, button);
         } else if (!this.state) {
             chatbox.classList.remove('chatbox--active')
-            this.toggleIcon(false, button);
+            // this.toggleIcon(false, button);
         }
     }
 
